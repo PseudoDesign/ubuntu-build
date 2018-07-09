@@ -1,5 +1,5 @@
 # Variables that need to be defined in a settings file
-LINUX_BRANCH = "rel_imx_4.1.15_2.1.0_ga"
+LINUX_BRANCH = "rel_imx_4.9.x_1.0.0_ga"
 LINUX_REPO = "git://git.freescale.com/imx/linux-imx.git"
 
 UBOOT_BRANCH = "imx_v2016.03_4.1.15_2.0.0_ga"
