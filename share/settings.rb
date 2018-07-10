@@ -1,6 +1,8 @@
 # Variables that need to be defined in a settings file
-LINUX_BRANCH = "rel_imx_4.9.x_1.0.0_ga"
-LINUX_REPO = "git://git.freescale.com/imx/linux-imx.git"
+LINUX_BRANCH = "4.1-2.0.x-imx"
+LINUX_REPO = "https://github.com/Freescale/linux-fslc.git"
+
+IMPORT_KERNEL_DEFCONFIG = "/share/imx_v7_with_fhandle"
 
 UBOOT_BRANCH = "imx_v2016.03_4.1.15_2.0.0_ga"
 UBOOT_REPO = "git://git.freescale.com/imx/uboot-imx.git"
