@@ -1,9 +1,9 @@
 # Variables that need to be defined in a settings file
 LINUX_BRANCH = "toradex_4.9-1.0.x-imx"
-LINUX_REPO = "git://git.toradex.com/linux-toradex.git"
+LINUX_REPO = "https://github.com/PseudoDesign/linux-toradex-imx.git"
 
 UBOOT_BRANCH = "2016.11-toradex"
-UBOOT_REPO = "git://git.toradex.com/u-boot-toradex.git"
+UBOOT_REPO = "https://github.com/PseudoDesign/uboot-toradex-imx.git"
 
 UBOOT_CONFIG = 'apalis_imx6_defconfig'
 KERNEL_CONFIG = 'apalis_imx6_defconfig'
