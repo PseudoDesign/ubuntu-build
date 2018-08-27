@@ -5,6 +5,8 @@ LINUX_REPO = "https://github.com/PseudoDesign/linux-toradex-imx.git"
 UBOOT_BRANCH = "2016.11-toradex"
 UBOOT_REPO = "https://github.com/PseudoDesign/uboot-toradex-imx.git"
 
+BOOTSTRAP_EXTRA_SCRIPT = "bootstrap.sh"
+
 UBOOT_CONFIG = 'apalis_imx6_defconfig'
 KERNEL_CONFIG = 'apalis_imx6_defconfig'
 
