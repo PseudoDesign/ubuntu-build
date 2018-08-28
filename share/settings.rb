@@ -29,7 +29,7 @@ PARTITION_INFO = [
   {
     partition_name: "rootfs1",
     partition_start_sector: 280000,
-    partition_length_sectors: (1024 * 1024 * 500)/512,
+    partition_length_sectors: (1024 * 1024 * 5000)/512,
     mkfs_command: "mkfs.ext3"
   }
 ]

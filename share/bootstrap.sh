@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 set -x
 
 apt-get install -y --no-install-recommends ubuntu-desktop
