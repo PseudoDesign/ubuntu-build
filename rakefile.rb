@@ -1,7 +1,7 @@
 RAKEFILE_DIR = File.expand_path(File.dirname(__FILE__))
 HOST_SHARE_DIR = File.join(RAKEFILE_DIR, "share")
 TARGET_SHARE_DIR = "/share"
-DOCKER_IMAGE = "pseudodesign/docker-ubuntu-arm:xenial"
+DOCKER_IMAGE = "docker-ubuntu-arm"
 USERNAME = "appuser"
 
 task :fetch_image do
