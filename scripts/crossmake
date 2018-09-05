@@ -1,0 +1,29 @@
+#!/bin/bash
+# ------------------------------------------------------------------
+# [Adam Schafer] crossmake
+#          Forwards "make" commands into a docker container
+# ------------------------------------------------------------------
+
+VERSION=0.1.0
+SUBJECT=sync-crossmake
+USAGE="Usage: pass argumetns to make on the docker container, eg 'crossmake -C /sources/linux menuconfig'
+
+"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+
+# --- Options processing -------------------------------------------
+if [ $# == 0 ] ; then
+    printf "$USAGE"
+    exit 1;
+fi
+
+args=$*
+
+# --- Locks -------------------------------------------------------
+
+# --- Body --------------------------------------------------------
+execute="make $args"
+
+${DIR}/docker_execute "$execute"
+# -----------------------------------------------------------------

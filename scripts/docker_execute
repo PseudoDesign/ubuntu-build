@@ -1,0 +1,34 @@
+#!/bin/bash
+# ------------------------------------------------------------------
+# [Adam Schafer] docker execute
+#          Forwards commands to a docker container
+# ------------------------------------------------------------------
+
+VERSION=0.1.0
+SUBJECT=sync-docker-execute
+USAGE="Usage: Execute commands in a bash container'
+
+"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+IMAGE=docker-ubuntu-arm
+USER=appuser
+
+# --- Options processing -------------------------------------------
+
+param="$*"
+
+# --- Locks -------------------------------------------------------
+
+# --- Body --------------------------------------------------------
+
+#"docker run -u $USER -it -v ${DIR}/../sources:/sources $IMAGE $param"
+
+mkdir -p ${DIR}/../build
+
+if [[ $# -lt 1 ]]; then
+  docker run --privileged -u $USER -it -v ${DIR}/../build:/build -v ${DIR}/../source:/source $IMAGE /bin/bash
+else
+  cmd="docker run --privileged -u $USER -it -v ${DIR}/../build:/build -v ${DIR}/../source:/source $IMAGE /bin/bash -c '$param'"
+  eval $cmd
+fi
+# -----------------------------------------------------------------
